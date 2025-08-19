@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoSoft - Professional Security Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%); }
+        .service-card { transition: all 0.3s ease; }
+        .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .hero-pattern { background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2L3 7v11a1 1 0 001 1h3v-6h6v6h3a1 1 0 001-1V7l-7-5z"/>
+                        </svg>
+                    </div>
+                    <h1 class="text-2xl font-bold text-white">TechnoSoft</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-blue-200 transition-colors">Home</a>
+                    <a href="#services" class="text-white hover:text-blue-200 transition-colors">Services</a>
+                    <a href="#about" class="text-white hover:text-blue-200 transition-colors">About</a>
+                    <a href="#contact" class="text-white hover:text-blue-200 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg hero-pattern py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl font-bold text-white mb-6">Professional Security Solutions</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">Protecting what matters most with cutting-edge technology and expert security services. Your safety is our priority.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">Get Quote</button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">Our Security Services</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive security solutions tailored to protect your assets, property, and peace of mind</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Car Tracking -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Vehicle Tracking</h4>
+                    <p class="text-gray-600 mb-6">Real-time GPS tracking for cars, trucks, and fleet vehicles. Monitor location, speed, and route history with 24/7 monitoring.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Live GPS tracking</li>
+                        <li>• Route optimization</li>
+                        <li>• Theft alerts</li>
+                        <li>• Mobile app access</li>
+                    </ul>
+                </div>
+
+                <!-- Camera Installation -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14 8a4 4 0 11-8 0 4 4 0 018 0zm-4-2a2 2 0 100 4 2 2 0 000-4z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">CCTV Installation</h4>
+                    <p class="text-gray-600 mb-6">Professional security camera systems for homes and businesses. HD recording, night vision, and remote monitoring capabilities.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• HD/4K cameras</li>
+                        <li>• Night vision</li>
+                        <li>• Remote viewing</li>
+                        <li>• Cloud storage</li>
+                    </ul>
+                </div>
+
+                <!-- Phone Recovery -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Phone Recovery</h4>
+                    <p class="text-gray-600 mb-6">Lost or stolen phone recovery services. Track, locate, and secure your mobile devices with advanced recovery technology.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Device tracking</li>
+                        <li>• Remote data wipe</li>
+                        <li>• Location services</li>
+                        <li>• Recovery assistance</li>
+                    </ul>
+                </div>
+
+                <!-- Access Control -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Access Control</h4>
+                    <p class="text-gray-600 mb-6">Smart locks, keycard systems, and biometric access control for secure entry management and visitor tracking.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Smart locks</li>
+                        <li>• Keycard systems</li>
+                        <li>• Biometric access</li>
+                        <li>• Visitor management</li>
+                    </ul>
+                </div>
+
+                <!-- Alarm Systems -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5zM10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Alarm Systems</h4>
+                    <p class="text-gray-600 mb-6">Comprehensive burglar alarms, fire detection, and emergency response systems with 24/7 monitoring services.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Burglar alarms</li>
+                        <li>• Fire detection</li>
+                        <li>• 24/7 monitoring</li>
+                        <li>• Emergency response</li>
+                    </ul>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-gray-900 mb-4">Cybersecurity</h4>
+                    <p class="text-gray-600 mb-6">Digital security solutions including network protection, data encryption, and cyber threat monitoring for businesses.</p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Network security</li>
+                        <li>• Data encryption</li>
+                        <li>• Threat monitoring</li>
+                        <li>• Security audits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-6">Why Choose TechnoSoft?</h3>
+                    <p class="text-lg text-gray-600 mb-8">With over a decade of experience in security solutions, TechnoSoft has protected thousands of homes and businesses with cutting-edge technology and reliable service.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2">24/7 Support</h4>
+                                <p class="text-gray-600">Round-the-clock monitoring and support for all our security systems</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2">Expert Installation</h4>
+                                <p class="text-gray-600">Certified technicians ensure proper installation and setup</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-2">Latest Technology</h4>
+                                <p class="text-gray-600">State-of-the-art security equipment and software solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid grid-cols-2 gap-8 text-center">
+                        <div>
+                            <div class="text-4xl font-bold text-blue-600 mb-2">10+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-blue-600 mb-2">5000+</div>
+                            <div class="text-gray-600">Clients Protected</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                            <div class="text-gray-600">Support Available</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-blue-600 mb-2">99%</div>
+                            <div class="text-gray-600">Uptime Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-900 mb-4">Get Your Free Security Assessment</h3>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Contact us today for a personalized security consultation and quote</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Phone</h4>
+                            <p class="text-gray-600">08033095802</p>
+                            <p class="text-gray-600">Available 24/7 for emergencies</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Email</h4>
+                            <p class="text-gray-600">info@technosoftresources.com</p>
+                            <p class="text-gray-600">support@technosoftsecurity.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-gray-900 mb-2">Office</h4>
+                            <p class="text-gray-600">NO 4 John chuku street</p>
+                            <p class="text-gray-600">Woji Port-Harcourt Rivers state Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>Select a service</option>
+                                <option>Vehicle Tracking</option>
+                                <option>CCTV Installation</option>
+                                <option>Phone Recovery</option>
+                                <option>Access Control</option>
+                                <option>Alarm Systems</option>
+                                <option>Cybersecurity</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your security needs..."></textarea>
+                        </div>
+                        <button type="button" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors" onclick="alert('Thank you for your interest! This is a demo form. In a real website, this would send your message to TechnoSoft.')">
+                            Get Free Quote
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2L3 7v11a1 1 0 001 1h3v-6h6v6h3a1 1 0 001-1V7l-7-5z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">TechnoSoft</h4>
+                    </div>
+                    <p class="text-blue-100">Professional security solutions for homes and businesses. Protecting what matters most.</p>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Services</h5>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>Vehicle Tracking</li>
+                        <li>CCTV Installation</li>
+                        <li>Phone Recovery</li>
+                        <li>Access Control</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Company</h5>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>About Us</li>
+                        <li>Our Team</li>
+                        <li>Careers</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold text-white mb-4">Connect</h5>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                            <span class="text-white font-bold">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                            <span class="text-white font-bold">t</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                            <span class="text-white font-bold">in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-700 mt-8 pt-8 text-center">
+                <p class="text-blue-100">&copy; 2024 TechnoSoft Security Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969c4400d39d2059',t:'MTc1NDI5MTc0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
